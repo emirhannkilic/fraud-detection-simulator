@@ -25,11 +25,11 @@ fraud-detection-simulator/
 
 ## Sprint Progress
 
-- Sprint 1 - EDA
-- Sprint 2 - Modeling
-- Sprint 3 - Explainability
-- Sprint 4 - Business Impact
-- Sprint 5 - Streamlit Dashboard
+- [x] Sprint 1 - EDA
+- [x] Sprint 2 - Modeling
+- [ ] Sprint 3 - Explainability
+- [ ] Sprint 4 - Business Impact
+- [ ] Sprint 5 - Streamlit Dashboard
 
 ## Key Findings - EDA
 
