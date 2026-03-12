@@ -27,7 +27,7 @@ fraud-detection-simulator/
 
 - [x] Sprint 1 - EDA
 - [x] Sprint 2 - Modeling
-- [ ] Sprint 3 - Explainability
+- [x] Sprint 3 - Explainability
 - [ ] Sprint 4 - Business Impact
 - [ ] Sprint 5 - Streamlit Dashboard
 
@@ -57,3 +57,11 @@ fraud-detection-simulator/
 
 
 ![Confusion Matrices](outputs/figures/confusion_matrices.png)
+
+## Key Findings - Explainability
+
+- V14 is the most dominant feature across all fraud cases
+- SHAP waterfall plots reveal why each individual transaction was flagged
+- Model confidence varies: f(x) ranges from 5.38 to 13.24 across fraud cases
+
+![SHAP Summary](outputs/figures/shap_summary.png)
