@@ -28,7 +28,7 @@ fraud-detection-simulator/
 - [x] Sprint 1 - EDA
 - [x] Sprint 2 - Modeling
 - [x] Sprint 3 - Explainability
-- [ ] Sprint 4 - Business Impact
+- [x] Sprint 4 - Business Impact
 - [ ] Sprint 5 - Streamlit Dashboard
 
 ## Key Findings - EDA
@@ -65,3 +65,13 @@ fraud-detection-simulator/
 - Model confidence varies: f(x) ranges from 5.38 to 13.24 across fraud cases
 
 ![SHAP Summary](outputs/figures/shap_summary.png)
+
+## Key Findings - Business Impact
+
+- Optimal threshold: 0.34, maximizing net profit
+- Model vs no model: $7,473 saved vs $10,644 lost per 56K transactions
+- Aggressive (0.3): 86% fraud caught, $7,463 profit, 14 customers blocked
+- Balanced (0.5): 84% fraud caught, $7,059 profit, 11 customers blocked
+- Conservative (0.7): 84% fraud caught, $7,069 profit, 10 customers blocked
+
+![Threshold vs Profit](outputs/figures/threshold_profit.png)
