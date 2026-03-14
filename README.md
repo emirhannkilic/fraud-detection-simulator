@@ -4,6 +4,9 @@ End-to-end machine learning pipeline on the [Kaggle Credit Card Fraud Detection]
 
 ![Demo](assets/streamlit_demo.gif)
 
+## Live Demo
+[fraud-detection-simulator.streamlit.app](https://fraud-detection-simulator.streamlit.app)
+
 ## Dataset
 
 - 284,807 transactions, 492 fraud (0.17%)
