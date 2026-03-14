@@ -2,6 +2,8 @@
 
 End-to-end machine learning pipeline on the [Kaggle Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) dataset.
 
+![Demo](assets/streamlit_demo.gif)
+
 ## Dataset
 
 - 284,807 transactions, 492 fraud (0.17%)
@@ -11,14 +13,12 @@ End-to-end machine learning pipeline on the [Kaggle Credit Card Fraud Detection]
 
 ```
 fraud-detection-simulator/
-├── notebooks/
-├── src/
-├── models/
+├── assets/
 ├── data/
+├── models/
+├── notebooks/
 ├── outputs/
 │   ├── figures/
-│   └── metrics/
-├── assets/
 ├── app.py
 └── requirements.txt
 ```
@@ -29,7 +29,7 @@ fraud-detection-simulator/
 - [x] Sprint 2 - Modeling
 - [x] Sprint 3 - Explainability
 - [x] Sprint 4 - Business Impact
-- [ ] Sprint 5 - Streamlit Dashboard
+- [x] Sprint 5 - Streamlit Dashboard
 
 ## Key Findings - EDA
 
@@ -75,3 +75,9 @@ fraud-detection-simulator/
 - Conservative (0.7): 84% fraud caught, $7,069 profit, 10 customers blocked
 
 ![Threshold vs Profit](outputs/figures/threshold_profit.png)
+
+## Key Findings - Dashboard
+
+- Interactive threshold slider with real-time business impact metrics
+- SHAP explainability integrated into dashboard
+- Three scenario comparison table
