@@ -9,3 +9,4 @@ streamlit-shap
 xgboost
 imbalanced-learn
 altair>=5.0.0
+kaggle

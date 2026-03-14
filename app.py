@@ -9,6 +9,8 @@ from sklearn.preprocessing import StandardScaler
 from streamlit_shap import st_shap
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
+import kaggle
+import os
 
 st.set_page_config(
     page_title="Fraud Detection Simulator",
@@ -31,6 +33,14 @@ def load_model():
 
 @st.cache_data
 def load_data():
+    os.environ['KAGGLE_USERNAME'] = st.secrets['KAGGLE_USERNAME']
+    os.environ['KAGGLE_KEY'] = st.secrets['KAGGLE_KEY']
+    kaggle.api.authenticate()
+    kaggle.api.dataset_download_files(
+        'mlg-ulb/creditcardfraud',
+        path='data/',
+        unzip=True
+    )
     df = pd.read_csv('data/creditcard.csv')
     return df
 
